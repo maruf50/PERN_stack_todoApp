@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import NoteList from './components/NoteList'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div>
-      <NoteList></NoteList>
+    <div className="min-h-screen bg-slate-50">
+      <div className="mx-auto max-w-4xl px-4 py-8">
+        <Navbar />
+        <NoteList />
+      </div>
     </div>
-    
   )
 }
 
